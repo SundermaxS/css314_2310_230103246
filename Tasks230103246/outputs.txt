@@ -55,3 +55,28 @@ Thread completion delta (min to max): 13,209 ms
 Strategy B: Dynamic scheduling
 Total wall time: 294,019 ms
 Thread completion delta (min to max): 1,563 ms
+
+TASK 5
+Student ID: 230103246
+OS: Mac OS X
+Architecture: aarch64
+Available logical cores: 10
+Parallel workers: 10
+Operation: y[i] = a * x[i] + b
+Timed repetitions: 5
+
+100          | 0,0015          | 0,0896          | 0,016      | SERIAL FASTER
+1000         | 0,0128          | 0,0921          | 0,138      | SERIAL FASTER
+10000        | 0,1617          | 0,0973          | 1,661      | PARALLEL FASTER
+100000       | 0,3230          | 0,2351          | 1,374      | PARALLEL FASTER
+1000000      | 0,3593          | 0,4130          | 0,870      | SERIAL FASTER
+10000000     | 2,5316          | 1,6358          | 1,548      | PARALLEL FASTER
+
+CROSSOVER ANALYSIS
+Crossover range: N > 1000 and N <= 10000
+At N=1000: serial=0,0128 ms, parallel=0,0921 ms
+At N=10000: serial=0,1617 ms, parallel=0,0973 ms
+Crossover range: N > 1000000 and N <= 10000000
+At N=1000000: serial=0,3593 ms, parallel=0,4130 ms
+At N=10000000: serial=2,5316 ms, parallel=1,6358 ms
+Final checksum: 251,250000
