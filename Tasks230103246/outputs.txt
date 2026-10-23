@@ -131,3 +131,20 @@ Copy speedup at 10 cores: 2,259x
 Compute speedup at 10 cores: 3,673x
 Conclusion: Kernel A (copy) scaled worse than Kernel B. This is consistent with a possible memory-bandwidth bottleneck, but does not prove RAM channel saturation.
 Output checksum: 2,009051
+
+TASK 8
+Matrix Multiplication
+Student ID: 230103246
+Matrix size: 1024 x 1024
+CPU threads: 10
+
+Method                Runtime (ms)         Speedup
+Non-tiled                  167,736           1,000
+Tiled 16x16                203,598           0,824
+Tiled 64x64                150,862           1,112
+
+Tiled 16x16 vs non-tiled: 21,38% slower
+Tiled 64x64 vs non-tiled: 10,06% faster
+
+Note: Cache misses were not directly measured.
+Runtime differences are used as a performance proxy.
