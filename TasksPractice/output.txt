@@ -12,3 +12,12 @@ Cache penalty factor: 1,149x
 Row-Major sum: 31998484,437140
 Column-Major sum: 31998484,437141
 
+TASK 2
+TASK 2: PRNG State Bottleneck
+Student ID: 230103246
+Threads: 4
+Total samples: 40000000
+
+Shared PRNG:       Pi = 3,1415486000, Error = 0,0000440536, Time = 3125,696 ms
+Independent PRNG:  Pi = 3,1414436000, Error = 0,0001490536, Time = 447,131 ms
+Speedup: 6,991x
