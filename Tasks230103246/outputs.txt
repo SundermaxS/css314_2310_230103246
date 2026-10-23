@@ -80,3 +80,28 @@ Crossover range: N > 1000000 and N <= 10000000
 At N=1000000: serial=0,3593 ms, parallel=0,4130 ms
 At N=10000000: serial=2,5316 ms, parallel=1,6358 ms
 Final checksum: 251,250000
+
+TASK 6
+Student ID: 230103246
+OS: Mac OS X
+Logical cores: 10
+Threads: 4
+Increments per thread: 2000000
+Expected final value: 8000000
+
+=== Without Synchronization ===
+Expected value: 8000000
+Actual value: 2044185
+Lost updates: 5955815
+Lost updates percentage: 74,45%
+Execution time: 7,030 ms
+
+=== With AtomicInteger ===
+Expected value: 8000000
+Actual value: 8000000
+Lost updates: 0
+Execution time: 176,793 ms
+
+=== Synchronization Cost ===
+Time penalty: 169,763 ms
+Time penalty percentage: 2414,85%
