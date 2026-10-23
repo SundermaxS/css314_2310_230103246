@@ -42,3 +42,16 @@ Unpadded total: 500000000
 Local total: 500000000
 Expected total: 500000000
 
+TASK 4
+OS: Mac OS X
+Items: 1000
+Workers: 4
+Dynamic chunk size: 1
+
+Strategy A: Static chunks
+Total wall time: 299,718 ms
+Thread completion delta (min to max): 13,209 ms
+
+Strategy B: Dynamic scheduling
+Total wall time: 294,019 ms
+Thread completion delta (min to max): 1,563 ms
