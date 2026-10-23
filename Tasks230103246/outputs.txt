@@ -1,0 +1,44 @@
+TASK 1
+Student ID: 230103246
+OS: Mac OS X
+OS Architecture: aarch64
+CPU: Apple M5
+Logical cores: 10
+Array size: 20000000
+Sum: 9998167.218703862
+Mean: 0.49990836093519314
+Population standard deviation: 0.2886908100026094
+Execution time: 582,649 ms
+
+TASK 2
+Student ID: 230103246
+OS: Mac OS X
+Architecture: aarch64
+Logical cores: 10
+Array size: 20000000
+
+Cores        | Wall Time (ms)  | Speedup      | Amdahl Upper Bound
+--------------------------------------------------------------------------
+1            | 20,575          | 1,000        | 1,000
+2            | 9,716           | 2,118        | 1,905
+4            | 4,879           | 4,217        | 3,478
+10           | 2,193           | 9,382        | 6,897
+20           | 3,045           | 6,756        | 10,256
+
+Parallelizable fraction P: 0.95
+Serial fraction: 0.050000000000000044
+
+TASK 3
+Student ID: 230103246
+OS: Mac OS X
+Architecture: aarch64
+Physical cores / workers: 10
+Increments per thread: 50000000
+
+Unpadded Shared: 243,094 ms
+Padded/Local:    66,196 ms
+Execution ratio (Unpadded / Local): 3,672x
+Unpadded total: 500000000
+Local total: 500000000
+Expected total: 500000000
+
