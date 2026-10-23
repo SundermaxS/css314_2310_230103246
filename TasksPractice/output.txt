@@ -42,3 +42,18 @@ Array size          Pipe IPC (ms)       Mapped file (ms)
 100000                     63,984                 75,896
 1000000                    60,084                 73,105
 10000000                  147,203                 96,062
+
+TASK 5
+Student ID: 230103246
+Available logical processors: 10
+CPU-bound tasks: 10000
+Hashes per task: 500
+
+Pool Size    Execution Time (ms)    Speedup relative to 1 thread   Status
+1            326,142                1,000                          OK
+5            65,908                 4,948                          OK
+10           35,777                 9,116                          OK
+20           141,586                2,303                          FIRST WORSENING
+40           114,343                2,852                          OK
+160          105,970                3,078                          OK
+256          88,131                 3,701                          OK
